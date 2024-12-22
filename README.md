@@ -1,5 +1,6 @@
 # credit-risk-classification
 Module 20 - Supervised Learning
+<br><br>
 
 **Instructions**
 
@@ -31,6 +32,7 @@ Use your knowledge of logistic regression to complete the following steps:
      - Print the classification report.
   4. Answer the following question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
 
+<br><br>
 **Credit Risk Analysis Report**
 
 **An overview of the analysis:** The primary purpose of this analysis is to evaluate the performance of machine learning models in predicting the credit risk of loans, categorized as either healthy loans (0) or high-risk loans (1).
