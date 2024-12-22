@@ -31,13 +31,34 @@ Use your knowledge of logistic regression to complete the following steps:
      - Print the classification report.
   4. Answer the following question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
 
-**Write a Credit Risk Analysis Report**
+**Credit Risk Analysis Report**
 
-Write a brief report that includes a summary and analysis of the performance of the machine learning models that you used in this homework. You should write this report as the README.md file included in your GitHub repository.
+**An overview of the analysis:** The primary purpose of this analysis is to evaluate the performance of machine learning models in predicting the credit risk of loans, categorized as either healthy loans (0) or high-risk loans (1).
 
-Structure your report by using the report template that Starter_Code.zip includes, ensuring that it contains the following:
-  1. **An overview of the analysis:** Explain the purpose of this analysis.
-  2. **The results:** Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
-  3. **A summary:** Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
+The dataset contains financial information about loans, including variables such as loan amount, interest rate, annual income, and loan status (loan_status). The target variable, loan_status, has two possible values:
+
+  - 0: Healthy Loan - indicating the loan is likely to be repaid.
+  - 1: High-Rish Loan - indicating the higher likelihood of default.
+
+    **Loan Variables:** The loan_status variable is imbalanced, with significantly more healthy loans (0) than high-risk loans (1).
+
+      - Value counts of target variable:
+        - 0 (Healthy Loans): 18,759
+        - 1 (High-Risk Loans): 625
+
+    **Machine Learning Process:** The analysis involved the following steps:
+
+    1. **Data Preprocessing:**
+       - Standardized the features using StandardScaler to ensure all variables have comparable scales.
+       - Split the dataset into training and testing sets.
+    2. **Model Selection:**
+       - Implemented and evaluated a logistic regression model (LogisticRegression) for binary classification tasks.
+    3. **Model Evaluation:**
+       - Used metrics such as accuracy, precision, recall, and F1-score to assess model performance, with a focus on predicting high-risk loans (1).
+
+**The results:**
+
+Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
+**A summary:** Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
 
 
