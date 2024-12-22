@@ -98,7 +98,7 @@ The logistic regression model achieves strong performance metrics, including a h
    
   - **Alternative Techniques:**
     - Use techniques like oversampling or undersampling to address the imbalance.
-    - Experiment with algorithms better suited to imbalance data.
+    - Experiment with algorithms better suited to imbalance data, like Random Forest
 
   - **Further Testing:**
     - Validate the model on a separate dataset with more balance proportions of high-risk and healthy loans to assess its real-world performance.
