@@ -35,7 +35,9 @@ Use your knowledge of logistic regression to complete the following steps:
 <br><br>
 **Credit Risk Analysis Report**
 
-**An overview of the analysis:** The primary purpose of this analysis is to evaluate the performance of machine learning models in predicting the credit risk of loans, categorized as either healthy loans (0) or high-risk loans (1).
+**Overview** 
+
+The primary purpose of this analysis is to evaluate the performance of machine learning models in predicting the credit risk of loans, categorized as either healthy loans (0) or high-risk loans (1).
 
 The dataset contains financial information about loans, including variables such as loan amount, interest rate, annual income, and loan status (loan_status). The target variable, loan_status, has two possible values:
 
@@ -76,7 +78,7 @@ The dataset contains financial information about loans, including variables such
   - Healthy Loan (0): 100% - Perfect balance of precision and recall for the majority class.
   - High-Risk Loan (1): 91% - Strong balance of precision and recall for the minority class. 
 
-**Summary:** 
+**Summary** 
 
 The logistic regression model achieves strong performance metrics, including a high overall accuracy of 99%, precision of 87%, and recall of 95% for identifying high-risk loans. However, despite these metrics, I would **not recommend this model as is** for deployment, or I would recommend it with the caveat that further testing and refinement are necessary.
 
