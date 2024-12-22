@@ -58,9 +58,50 @@ The dataset contains financial information about loans, including variables such
     3. **Model Evaluation:**
        - Used metrics such as accuracy, precision, recall, and F1-score to assess model performance, with a focus on predicting high-risk loans (1).
 
-**The results:**
+**Results:**
+**Machine Learning Model: Logistic Regression**
 
-Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
-**A summary:** Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
+- **Accuracy:** 99%
+  - The model correctly classified 99% of the loans in the test dataset.
 
+- **Precision:**
+  - Healthy Loan (0): 100% - All predicted healthy loans were indeed healthy.
+  - High-Risk Loan (1): 87% - 87% of the loans predicted as high-risk were actually high-risk.
+
+- **Recall:**
+  - Healthy Loan (0): 100% - All actual healthy loans were identified correctly.
+  - High-Risk Loan (1): 95% - The model identified 95% of actual high-risk loans.
+ 
+- **F1-Score:**
+  - Healthy Loan (0): 100% - Perfect balance of precision and recall for the majority class.
+  - High-Risk Loan (1): 91% - Strong balance of precision and recall for the minority class. 
+
+**Summary:** 
+
+The logistic regression model achieves strong performance metrics, including a high overall accuracy of 99%, precision of 87%, and recall of 95% for identifying high-risk loans. However, despite these metrics, I would **not recommend this model as is** for deployment, or I would recommend it with the caveat that further testing and refinement are necessary.
+
+**Concerns**
+
+  - **Imbalanced Dataset:**
+    - The dataset is heavily imbalanced, with significantly fewer high-risk loans (1) compared to healthy loans (0). This likely skews the model’s ability to generalize, as it has far more data to learn from for healthy loans than high-risk loans.
+   
+  - **Main Goal:**
+    - The main goal is to accurately predict the credit risks of loans. While the model has a strong recall (95%) for high-risk loans, its precision for this category (87%) indicates that some healthy loans are being midclassified as high-risk.
+    - Miscalssifications of this kind can lead to denial of loans to eligible individuals, which can negatively impact both the lender's reputation and the borrower's opportunities.
+   
+**Recommendations for Improvement**
+
+  - **Increase the High-Risk Loan Data:**
+    - Collect or generate more data for high-risk loans to balance the dataset. This will provide the model with sufficient examples of high-risk loans and help it to generalize better.
+   
+  - **Alternative Techniques:**
+    - Use techniques like oversampling or undersampling to address the imbalance.
+    - Experiment with algorithms better suited to imbalance data, such as Random Forest.
+
+  - **Further Testing:**
+    - Validate the model on a separate dataset with more balance proportions of high-risk and healthy loans to assess its real-world performance.
+
+**Conclusion**
+
+This model provides a solid starting point, but is imbalanced training data limits its utility for real-world applications. A better approach would be to refine the dataset and test additional models to ensure high-risk loans are identified with greater precision and recall. This would help the lender make more accurate decisions, ultimately improving the loan approval process. 
 
